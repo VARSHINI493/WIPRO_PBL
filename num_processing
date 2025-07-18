@@ -1,0 +1,27 @@
+import java.util.*;
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number for finding '+' , '-' or '0' ");
+		int a = sc.nextInt();
+		if(a>0){ System.out.println("Positive");}
+		else if (a<0) { System.out.println("Negative");}
+		else { System.out.println("Zero");}
+		System.out.println("Enter two numbers above 10 : ");
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		int l1=0, l2=0;
+		while(b!=0) {
+			int t=b%10;
+			l1=t;
+			break;
+		}
+		while(c!=0) {
+			int t=c%10;
+			l2=t;
+			break;
+		}
+		if(l1==l2) System.out.println("True");
+		else System.out.println("False");
+	}
+}
