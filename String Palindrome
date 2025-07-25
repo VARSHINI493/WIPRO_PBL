@@ -1,0 +1,24 @@
+import java.util.*;
+public class String_Palindrome{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    String input1=sc.next();
+    input1=input1.toUpperCase();
+    char a[] =input1.toCharArray();
+    int n=input1.length();
+    int l=n;
+    int f=0;
+    for(int i=0; i<n; i++){
+        if(a[i]!=a[l-1]){
+            f=1;
+        }
+        l--;
+    }
+    if(f==0){
+        return 2;
+    }
+    else{
+        return 1;
+    }
+  }
+}
